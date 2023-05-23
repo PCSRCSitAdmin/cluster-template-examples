@@ -10,12 +10,12 @@ cluster:
   annotations: {}
 
 # specify cloud credential secret name, do not need to be provided if using custom driver
-cloudCredentialSecretName: ""
+cloudCredentialSecretName: "none"
 
 # specify cloud provider, options are amazonec2, digitalocean, azure, vsphere or custom
-cloudprovider: "digitalocean"
+cloudprovider: "none"
 
-kubernetesVersion: ""
+kubernetesVersion: "1.24.13"
 
 # general RKE options
 rke:
@@ -29,8 +29,8 @@ rke:
 
 # specify user principal ids to be assiged as cluster members
 # clusterMembers:
-# - principalName: "local://u-z8zl5"
-#   roleTemplateName: "cluster-member"
+# - principalName: "local://user-mkrz6"
+#   roleTemplateName: "admin"
 
 # enable monitoring
 monitoring:
